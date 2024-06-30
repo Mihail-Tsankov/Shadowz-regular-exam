@@ -6,13 +6,15 @@ on:
       - main
 
 jobs:
- build:
-     steps:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
       - name: Checkout repository
         uses: actions/checkout@v2
 
       - name: Display SoftUni username
-        run: echo "SoftUni username: Shadowz"
+        run: echo "Shadowz"
 
       - name: Install Node.js
         uses: actions/setup-node@v2
