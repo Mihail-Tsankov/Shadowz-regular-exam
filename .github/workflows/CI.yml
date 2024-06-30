@@ -22,11 +22,11 @@ jobs:
           node-version: '20.15.0'  
       - name: Install dependencies
         run: npm install
-        working-directory: Shadowz-regular-exam/library
+        working-directory: library
 
       - name: Run unit tests
         run: npm run test:unit
-        working-directory: Shadowz-regular-exam/library
+        
         
   test:
     runs-on: ubuntu-latest
