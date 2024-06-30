@@ -38,11 +38,11 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-        working-directory: Shadowz-regular-exam/library
+        working-directory: library
 
       - name: Run tests
         run: npm run test:ui
-        working-directory: Shadowz-regular-exam/library
+        working-directory: library
 
   merge:
     runs-on: ubuntu-latest
